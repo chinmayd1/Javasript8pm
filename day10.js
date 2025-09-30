@@ -52,3 +52,4 @@ while(i1 < cities2.length){
     console.log(cities2[i1])
     i1 = i1 + 1 
 }
+
