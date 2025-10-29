@@ -1,0 +1,29 @@
+h1 {
+    color: blue;
+}
+
+p {
+    color: purple;
+}
+
+#one {
+    color: red;
+}
+
+.two {
+    color: brown;
+}
+
+.red {
+    color: red;
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+}
+
+.green {
+    color: green;
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+}
