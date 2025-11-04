@@ -1,5 +1,3 @@
-
-
 let headOne = document.querySelector('h1')
 let inputE = document.querySelector('input')
 let buttonE = document.querySelector('button')
