@@ -54,6 +54,80 @@ let q6 = addE(setA)
 console.log(q6)
 
 // map as parameter and map as return type  
+let mapV = new Map([
+    [1,"admin"],
+    [2,"customer"],
+    [3,"manager"]
+])
+
+function addRole(mapA){
+    mapA.set(4,"supervisior")
+    return mapA
+}
+
+let q66 = addRole(mapV)
+console.log(q66)
+
+// function 
+
+// function declaration
+
+function addition(x,y){
+    return x + y
+}
+let q11 = addition(12,3)
+console.log(q11)
+
+// function expression 
+
+let additionB = function(x,y){
+    return x + y
+}
+let q12 = additionB(12,3)
+console.log(q12)
+
+// arrow function 
+
+let additionC = (x,y)=>{
+    return x + y
+}
+let q13 = additionC(12,3)
+console.log(q13)
+
+// arrow function if have 1 statement
+
+let subtractionB = (x,y)=>{
+    return x - y
+}
+let q55 = subtractionB(12,4)
+console.log(q55)
+
+let q133 = subtractionB = (x,y) => x - y // lambda function
+console.log(q133(12,4))
+
+// arrow function if have 1 parameter
+let squareA = y => y * y // lambda function
+console.log(squareA(4))
+
+
+
+// function as a parameter 
+
+let a = 10
+console.log(a)
+
+let additionAA = (x,y) => x + y
+console.log(additionAA)
+
+
+
+
+
+// function as a return 
+
+
+
+
 
 
 
