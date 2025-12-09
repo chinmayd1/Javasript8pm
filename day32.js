@@ -59,6 +59,15 @@ function userInfo(){
             },1000)
         },2000)
     },3000)
-
 }
 userInfo()
+
+// tightly coupled  and modular, readable 
+// promises
+// promise  ------> 
+// promise ---> 
+// promise -- 
+// pending 
+// resolve
+// reject
+

@@ -103,14 +103,13 @@ console.log(k) // 90
 
 // console.log(j11) // 55
 
-
 const j11 = 55
 {
-     j11 = 900
-    console.log(j11) // 900
+    j11 = 900
+    console.log(j11)
 }
 
-console.log(j11) // 55
+console.log(j11) 
 
 
 

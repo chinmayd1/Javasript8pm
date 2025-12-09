@@ -138,6 +138,10 @@ let ninad = new PersonS()
 ninad.firstN = "ninad"
 ninad.lastN = "dani"
 console.log(ninad)
-
 console.log(ninad.firstN)
 console.log(ninad.lastN)
+
+let ar  = [11,22,33]
+
+ar.length
+ar.concat()
