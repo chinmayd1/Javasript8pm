@@ -363,11 +363,54 @@ async function allRaceF() {
 
 
 
-
-
-
-
 // promise.any()
+
+// promise combinators -->
+// promise.all() ---> returns array if all resolved else short circuit
+// promise.allSettled() ---> returns failed status as well as passed state
+// promise.race() ---> whichever the promise executed first it will be return 
+// promise.any() --> will shortcircuit on first resolve state and ignore every other state
+
+let pro7 = new Promise(function(resolve,reject){
+    setTimeout(function(){
+        reject("bye")
+    },1000)
+})
+
+let pro8 = new Promise(function(resolve,reject){
+    setTimeout(function(){
+        resolve("hello")
+    },3000)
+})
+
+let pro9 = new Promise(function(resolve,reject){
+    setTimeout(function(){
+        resolve("hello3")
+    },2000)
+})
+
+Promise
+.any([pro7,pro8,pro9])
+.then(function(str){
+    console.log(str)
+})
+.catch(function(str){
+    console.log(str)
+})
+
+async function promiseAny(){
+    try {
+       let proresult = await Promise.any([
+        pro7,pro8,pro9
+       ])  
+       console.log(proresult)
+    }
+    catch {
+        console.log("result 3")
+    }
+}
+promiseAny()
+
 
 
 
